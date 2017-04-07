@@ -1,4 +1,4 @@
-# MSISDN_Decoder
+# MSISDN Decoder
 
 ## How to use it:
 If you have Docker, enter the following commands:
@@ -13,7 +13,7 @@ Otherwise clone the source code, build and run the container, and use the follow
 
 
 ## How it works:
-This application takes an MSISDN, decodes the number using two JSON files in /Data directory, and returns the following:
+This application takes an MSISDN, decodes the number using two JSON files in the Data directory, and returns the following:
 * country dialing code
 * country identifier as defined with ISO 3166-1-alpha-2
 * subscriber number
