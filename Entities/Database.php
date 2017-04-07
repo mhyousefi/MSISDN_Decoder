@@ -19,7 +19,6 @@ class Database{
         if ($country != NULL) {
             $country_ID = $country->code;
             $country_dial_code = $country->dial_code;
-            $country_name = $country->name;
 
             $subsc_num = "";
             $MNO_ID = "";
@@ -30,7 +29,7 @@ class Database{
                 $MNO_ID = $info[1];
 
             }
-            return new Subscriber($country_ID, $country_dial_code, $country_name, $subsc_num, $MNO_ID);
+            return new Subscriber($country_ID, $country_dial_code, $subsc_num, $MNO_ID);
         }
         return NULL;
     }
@@ -51,7 +50,7 @@ class Database{
                 if ($prefix == substr($phone_num, 0, strlen($prefix))){
                     $MNO_ID = $carrier->operator;
                     $subsc_num = substr($phone_num, strlen($prefix));
-                    return [$MNO_ID, $subsc_num];
+                    return [$subsc_num, $MNO_ID];
                 }
             }
         }
