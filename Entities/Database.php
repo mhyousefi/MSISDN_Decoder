@@ -13,6 +13,9 @@ class Database{
     }
 
     public function find_subscriber(string $msisdn){
+        //Uses the two JSON files present in the object and decodes info regarding
+        //the given MSISDN
+
         $country = $this->find_country_info($msisdn);
 
         //If there is a valid country match in the JSON file:

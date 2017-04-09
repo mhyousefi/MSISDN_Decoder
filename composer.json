@@ -1,5 +1,6 @@
 {
     "require": {
-        "fguillot/json-rpc": "@stable"
+        "fguillot/json-rpc": "@stable",
+        "phpunit/phpunit": "*"
     }
 }

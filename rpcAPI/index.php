@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Hossein
- * Date: 4/5/17
- * Time: 10:24 PM
- */
 
 define("country_info_file_name", "../Data/country_names_dial_codes_identifiers.json");
 define("IR_Carriers_file_name", "../Data/Iranian_carriers_info.json");
@@ -33,5 +27,6 @@ $server->getProcedureHandler()
         return $subsc;
     })
 ;
+
 
 echo $server->execute();
