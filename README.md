@@ -24,6 +24,11 @@ This application takes an MSISDN, decodes the number using two JSON files in the
 * It is clear that a database (MySQlLi) is preferred in such programs. However, due to the small scope of the program, two JSON files containing relevant info are used.
 * JSON was preferred to XML because JSON is trending and bcoming more popular and is easy to parse in different languages. https://trends.google.com/trends/explore?q=xml,json
 
+## Unit test results
+Executing phpunit test in Test/DatabaseTest.php:
+
+![Alt text](Test/phpunit_test_results.png?raw=true "Optional Title")
+
 ## On MSISDN
 Mobile Subscriber Integrated Services Digital Network (MSISDN) refers to the mobile phone number of the participating customer. 
 
